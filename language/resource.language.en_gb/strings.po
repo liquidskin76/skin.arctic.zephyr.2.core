@@ -162,7 +162,7 @@ msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31030"
-msgid "Reset"
+msgid "Reset Skin"
 msgstr ""
 
 #: /1080i/SkinSettings.xml
