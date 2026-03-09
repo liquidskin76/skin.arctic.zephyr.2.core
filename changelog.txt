@@ -4,6 +4,7 @@ liquidskin
 - Comment out 'script.skin.helper.skinbackup' addon from 'Manage Dependencies' list in \xml\SkinSettings.xml (addon not supported in Kodi Omega)
 - Comment out backup and restore options from '\xml\SkinSettings.xml' and update relevant labels
 - Update strings.po 
+- Comment out no longer supported or not needed addons from 'Manage Dependencies' list in \xml\SkinSettings.xml
 
 0.9.61
 - Update addon.xml structure
