@@ -1,6 +1,9 @@
 liquidskin
 
 0.9.65
+- Rename skin to Artic: Zephyr 2 Core
+
+0.9.65
 - Comment out all code relating to Clearlogo
 - Add Movie title, etc to 'Basic' home layout global widget background (instead of clearlogo)
 - Add left and right arrows to 'Basic' home layout global widget (to aid navigation)

@@ -1,4 +1,4 @@
-<addon id="skin.arctic.zephyr.2.liquid" name="Arctic Zephyr 2 liquid" provider-name="jurialmunkey - liquidskin" version="0.9.65">
+<addon id="skin.arctic.zephyr.2.core" name="Arctic: Zephyr 2 Core" provider-name="jurialmunkey - liquidskin" version="0.9.65">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skin.helper.colorpicker" version="2.0.3" />
@@ -31,6 +31,6 @@
             <screenshot>resources/screenshot-06.jpg</screenshot>
         </assets>
         <summary lang="en_GB">Clean, minimal, elegant, simple, light.</summary>
-        <description lang="en_GB">Arctic Zephyr 2 is a minimalistic skin created by jurialmunkey, and modded by liquidskin. The skin is designed to be simple so that the user can focus on their media content. In addition to the default light colour scheme, the skin also includes a number of darker variations.</description>		
+        <description lang="en_GB">Arctic: Zephyr 2 Core is a minimalistic skin, based off the original Arctic: Zephyr 2 created by jurialmunkey. The skin is designed to be simple so that the user can focus on their media content. In addition to the default light colour scheme, the skin also includes a number of darker variations.</description>		
     </extension>
 </addon>
