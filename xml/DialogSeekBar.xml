@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window id="115">
     <defaultcontrol always="true">901</defaultcontrol>
     <zorder>0</zorder>
@@ -108,3 +111,6 @@
     </controls>
 
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

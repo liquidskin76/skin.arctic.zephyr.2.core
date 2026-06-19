@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window type="dialog" id="1140">
     <defaultcontrol always="true">8300</defaultcontrol>
     <onload>SetProperty(Header_Center_Text,$LOCALIZE[14116])</onload>
@@ -15,3 +19,6 @@
         <include>DialogVideoInfo</include>
     </controls>
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

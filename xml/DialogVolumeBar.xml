@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window id="104">
     <zorder>10</zorder>
     <controls>
-        <!-- <control type="image">
-            <include>Defs_ShadowBack_Fullscreen</include>
-            <visible>!Player.Muted</visible>
-        </control> -->
+
         <control type="group">
             
             <include>Animation_FadeIn_Slide</include>
@@ -71,3 +71,6 @@
     </controls>
 
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

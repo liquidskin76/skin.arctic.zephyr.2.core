@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window type="window" id="1137">
     <defaultcontrol always="true">9999</defaultcontrol>
     <onload>SetProperty(Header_Center_Text,Information)</onload>
@@ -11,3 +15,6 @@
         </control>
     </controls>
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

@@ -1,7 +1,26 @@
 liquidskin
+Artic: Zephyr 2 Core
 
-0.9.65
+0.9.66
 - Rename skin to Artic: Zephyr 2 Core
+- Remove additional dark color options so only light and dark (previously 'with dark dialogs') are options
+- Remove Artic: Zephyr 2 splash screen text
+- Reposition vertical home screen menu and widgets
+- Increase vertical home screen menu and widgets separation
+- Remove Basic and Horizontal home screen code (so vertical is only and default menu layout)
+- Remove redundant skin settings code relating to home screen layout changes
+- Remove redundant Color Picker related code (plugin no longer supported)
+- Update code so 'Skin Settings / Misc / Selection box' options are Default and White
+- Migrate background blur feature code to TMDb Helper plugin by jurialmunkey (previous code was using the discontinued Colorbox plugin)
+- Remove PVR xml code and menu items (as unable to support)
+- Switch dark mode to default and remove light option (so dark only)
+- Add white focus line at the screen edge on vertical main menu 
+- Remove get auto scroll option and related code
+- make home submenu hub default and remove list submenu
+- Settings options clean-up to reflect changes
+- Update labels that are not localized
+- Additional minor design tweaks
+- Additional code clean-up and remove comment out
 
 0.9.65
 - Comment out all code relating to Clearlogo
@@ -45,6 +64,7 @@ liquidskin
 
 
 jurialmunkey
+Artic: Zephyr 2
 
 0.9.60
 -

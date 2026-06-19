@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window type="window" id="1113">
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
@@ -30,3 +33,6 @@
         </control>
     </controls>
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

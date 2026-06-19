@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window type="dialog" id="1141">
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
@@ -12,7 +15,7 @@
 
             <control type="label">
                 <description>Header Label</description>
-                <label>Choose displayed information tags</label>
+                <label>$LOCALIZE[31465]</label>
                 <include>Dialog_Standard_Header</include>
             </control>
 
@@ -27,14 +30,14 @@
                 <orientation>vertical</orientation>
                 <usecontrolcoords>true</usecontrolcoords>
                 <control type="button" id="9001">
-                    <label>Disable all tags</label>
+                    <label>$LOCALIZE[31466]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.Reset(EnableLanguages)</onclick>
                     <onclick>Close</onclick>
                 </control>
                 <control type="radiobutton" id="9002">
-                    <label>Studios</label>
+                    <label>$LOCALIZE[31467]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Tags.DisableStudios)</onclick>
@@ -42,7 +45,7 @@
                     <enable>Skin.HasSetting(EnableLanguages)</enable>
                 </control>
                 <control type="radiobutton" id="9003">
-                    <label>Countries</label>
+                    <label>C$LOCALIZE[31468]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Tags.DisableCountries)</onclick>
@@ -50,7 +53,7 @@
                     <enable>Skin.HasSetting(EnableLanguages)</enable>
                 </control>
                 <control type="radiobutton" id="9004">
-                    <label>Languages</label>
+                    <label>$LOCALIZE[31469]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Tags.DisableLanguages)</onclick>
@@ -58,7 +61,7 @@
                     <enable>Skin.HasSetting(EnableLanguages)</enable>
                 </control>
                 <control type="radiobutton" id="9005">
-                    <label>Codecs</label>
+                    <label>$LOCALIZE[31470]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Tags.DisableCodecs)</onclick>
@@ -88,3 +91,6 @@
         </control>
     </controls>
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

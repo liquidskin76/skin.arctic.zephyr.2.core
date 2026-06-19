@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+
 <includes>
 
+	<!-- Artic: Zephyr 2 Core -->
+	
+	
     <include file="Defaults.xml" />
 
     <include file="Includes_View_50_List.xml" />
@@ -21,7 +24,6 @@
     <include file="Includes_Items.xml" />
     <include file="Includes_Images.xml" />
     <include file="Includes_Labels.xml" />
-    <include file="Includes_NextAired.xml" />
     <include file="Includes_Object.xml" />
     <include file="Includes_OSD.xml" />
     <include file="Includes_Topbar.xml" />
@@ -40,7 +42,7 @@
         <value>Highlight</value>
     </variable>
     <variable name="ColorHighlight2">
-        <value condition="String.IsEqual(Skin.String(PosterHighlight),Highlight)">$VAR[ColorHighlight]</value>
+        <value condition="String.IsEqual(Skin.String(PosterHighlight),Default)">$VAR[ColorHighlight]</value>
         <value>Selected</value>
     </variable>
 
@@ -50,4 +52,18 @@
         <width>1920</width>
         <height>1080</height>
     </include>
+	
+
+	<!-- background blur --> 
+	<include name="Action_Blur_Onload">
+        <definition>
+            <onload condition="!Skin.HasSetting(use_poster)">SetProperty(TMDbHelper.Blur.SourceImage,Art(fanart),Home)</onload>
+            <onload condition="Skin.HasSetting(use_poster)">SetProperty(TMDbHelper.Blur.SourceImage,Art(poster)|Art(thumb),Home)</onload>  
+        </definition>
+    </include>
+	<!-- background blur -->	
+	
+	
+	<!-- Artic: Zephyr 2 Core -->
+	
 </includes>

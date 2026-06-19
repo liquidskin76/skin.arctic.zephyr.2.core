@@ -29,7 +29,7 @@
                 <font>font_small_bold</font>
                 <align>left</align>
                 <textcolor>dialog_fg_70</textcolor>
-                <label>Customize Widgets</label>
+                <label>$LOCALIZE[31472]</label>
                 <visible>[String.EndsWith(Window.Property(groupname),.1) | String.IsEqual(Window.Property(groupname),searchmenu)]</visible>
             </control>
 
@@ -219,7 +219,7 @@
                 </control>
 
                 <control type="button" id="4101" description="Choose Search Item">
-                    <label>Default search items</label>
+                    <label>$LOCALIZE[31473]</label>
                     <onclick>SetProperty(custom-grouping,customsearchdefaultitems)</onclick>
                     <onclick>SendClick(401)</onclick>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>

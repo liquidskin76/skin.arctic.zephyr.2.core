@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
-    <variable name="Label_PVRGuide_Title">
-        <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
-        <value condition="!String.IsEmpty(ListItem.ChannelName)">$INFO[ListItem.ChannelName]</value>
-    </variable>
-
-    <variable name="Label_PVRGuide_SubTitle">
-        <value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.StartTime,[COLOR main_fg_100],[/COLOR]]$INFO[ListItem.EndTime,[COLOR main_fg_100]  -  ,[/COLOR]]$INFO[ListItem.Genre,  |  [COLOR main_fg_100],[/COLOR]]</value>
-    </variable>
-
-    <variable name="Label_PVRGuide_ChannelNumber">
-        <value condition="Skin.HasSetting(PVRGuide.ChannelNumber)">$INFO[ListItem.ChannelNumberLabel]</value>
-    </variable>
-
     <variable name="Label_Info_PlayButton">
         <value condition="ListItem.IsFolder">$LOCALIZE[1024]</value>
         <value>$LOCALIZE[208]</value>
@@ -39,9 +26,8 @@
     </variable>
 
     <variable name="Label_SkinSettings_HomeLayout">
-        <value condition="Skin.HasSetting(HomeMulti) + !Skin.HasSetting(HomeMultiHorizontal)">Vertical menu | Multiple widgets</value>
-        <value condition="Skin.HasSetting(HomeMulti) + Skin.HasSetting(HomeMultiHorizontal)">Horizontal menu | Multiple widgets</value>
-        <value>Basic</value>
+        <value condition="Skin.HasSetting(HomeMulti) + !Skin.HasSetting(HomeMultiHorizontal)">$LOCALIZE[31440]</value>
+        <value condition="Skin.HasSetting(HomeMulti) + Skin.HasSetting(HomeMultiHorizontal)">$LOCALIZE[31441]</value>
     </variable>
 
     <variable name="Label_SkinSettings_WidgetMovement">
@@ -61,6 +47,11 @@
         <value condition="Skin.HasSetting(HomeTextAutoWidth)">Auto-width Text</value>
         <value>Fixed-width Text</value>
     </variable>
+	
+    <variable name="Label_SkinSettings_BackgroundArtwork">
+        <value condition="!Skin.HasSetting(TMDbHelper.EnableBlur)">$LOCALIZE[31443]</value>
+        <value>$LOCALIZE[31444]</value>
+    </variable>	
 
     <variable name="Label_AudioChannels">
         <value condition="String.IsEqual(ListItem.AudioChannels,8)">7.1</value>
@@ -414,7 +405,6 @@
         <value condition="Player.Paused">$LOCALIZE[112]</value>
         <value condition="Player.IsTempo">$LOCALIZE[31236] $INFO[Player.PlaySpeed]x</value>
         <value condition="Player.Playing">$LOCALIZE[31236]</value>
-        <!-- <value>$INFO[System.Time,Time  ,]$INFO[Player.FinishTime,[COLOR=main_fg_70]  •  $LOCALIZE[31106] ,[/COLOR]]</value> -->
     </variable>
 
     <variable name="Label_VideoHWDecoder">

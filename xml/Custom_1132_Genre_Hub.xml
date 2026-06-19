@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window type="window" id="1132">
     <defaultcontrol always="true">5600</defaultcontrol>
     <onload>SetProperty(Header_Center_Text,$LOCALIZE[135])</onload>
@@ -8,7 +12,6 @@
         <include>Topbar</include>
 
         <control type="group">
-            <visible allowhiddenfocus="true">!$EXP[Exp_ShowPlotOverlay]</visible>
             <include>Animation_FadeInOut</include>
             <include>View_Group</include>
             <control type="panel" id="5600">
@@ -21,15 +24,6 @@
                 </include>
                 <content sortorder="ascending" sortby="label">videodb://movies/genres/</content>
             </control>
-
-            <!-- <control type="label">
-                <bottom>402.5</bottom>
-                <height>40</height>
-                <align>center</align>
-                <font>font_byline</font>
-                <textcolor>main_fg_70</textcolor>
-                <label>$INFO[Container(5600).ListItem.Label] $INFO[Window.Property(Header_Left_Text)]</label>
-            </control> -->
 
             <control type="group">
                 <top>337.5</top>
@@ -53,6 +47,9 @@
             </include>
         </control>
 
-        <include>Object_PlotOverlay</include>
+        
     </controls>
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
 
@@ -151,3 +155,6 @@
     </controls>
 
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

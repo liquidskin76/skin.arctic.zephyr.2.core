@@ -154,8 +154,8 @@
         <property name="widgetAspect">Poster</property>
         <property name="widgetName">$LOCALIZE[31105]</property>
         <property name="widgetTarget">$VAR[Defs_Widget_Target]</property>
-        <property name="widgetPath">$INFO[Skin.String(widgetPath)]</property>
-        <controls>
+        <property name="widgetPath">$INFO[Skin.String(widgetPath)]</property>		
+        <controls>			
             <include content="View_Cast_Toplabel">
                 <param name="groupid" value="997500" />
                 <param name="id" value="993100" />
@@ -183,14 +183,12 @@
                 <param name="landscapecondition" value="$PYTHON['true' if widgetAspect in 'Landscape' else 'false']" />
                 <param name="iconcondition" value="$PYTHON['true' if widgetAspect in 'Icon' else 'false']" />
                 <param name="bannercondition" value="$PYTHON['true' if widgetAspect in 'Banner' else 'false']" />
-                <include content="Defs_AutoScroll">
-                    <param name="condition" value="!ControlGroup(3000).HasFocus() + System.IdleTime(1) + !Skin.HasSetting(DisableAutoScrollWidgets)" />
-                </include>
                 <onback>301</onback>
                 <!-- <movement>6</movement> -->
                 <visible>Integer.IsGreater(Container(993100).NumItems,0) | Container(993100).IsUpdating</visible>
                 <skinshortcuts>visibility</skinshortcuts>
                 <visible>Integer.IsEqual(Container(9989).NumItems,0)</visible>
+				<!-- <visible>String.IsEqual(Container(301).ListItem.Property(defaultID),movies)</visible> -->
             </include>
             <include content="Object_Widget_Spotlight" condition="Skin.HasSetting(FixedWidgets)">
                 <param name="controltype" value="fixedlist" />
@@ -211,14 +209,12 @@
                 <param name="landscapecondition" value="$PYTHON['true' if widgetAspect in 'Landscape' else 'false']" />
                 <param name="iconcondition" value="$PYTHON['true' if widgetAspect in 'Icon' else 'false']" />
                 <param name="bannercondition" value="$PYTHON['true' if widgetAspect in 'Banner' else 'false']" />
-                <include content="Defs_AutoScroll">
-                    <param name="condition" value="!ControlGroup(3000).HasFocus() + System.IdleTime(1) + !Skin.HasSetting(DisableAutoScrollWidgets)" />
-                </include>
                 <onback>301</onback>
                 <!-- <movement>6</movement> -->
                 <visible>Integer.IsGreater(Container(993100).NumItems,0) | Container(993100).IsUpdating</visible>
                 <skinshortcuts>visibility</skinshortcuts>
                 <visible>Integer.IsEqual(Container(9989).NumItems,0)</visible>
+				<!-- <visible>String.IsEqual(Container(301).ListItem.Property(defaultID),movies)</visible> -->	
             </include>
         </controls>
     </other>
@@ -327,9 +323,6 @@
                 <visible>Integer.IsGreater(Container($PYTHON[int(mainmenuid)]$PYTHON[int(id) + 3100]).NumItems,0) | Container($PYTHON[int(mainmenuid)]$PYTHON[int(id) + 3100]).IsUpdating</visible>
                 <visible>String.IsEqual(Container(301).ListItem.Property(id),$SKINSHORTCUTS[mainmenuid])</visible>
                 <!-- <movement>$SKINSHORTCUTS[widgetMovement]</movement> -->
-                <include content="Defs_AutoScroll">
-                    <param name="condition" value="!ControlGroup(3000).HasFocus() + System.IdleTime(1) + !Skin.HasSetting(DisableAutoScrollWidgets) + Integer.IsEqual(Container(3000).NumItems,1)" />
-                </include>
             </include>
             <include content="Object_Widget_Spotlight" condition="Skin.HasSetting(FixedWidgets)">
                 <param name="controltype" value="fixedlist" />
@@ -358,9 +351,6 @@
                 <visible>Integer.IsGreater(Container($PYTHON[int(mainmenuid)]$PYTHON[int(id) + 3100]).NumItems,0) | Container($PYTHON[int(mainmenuid)]$PYTHON[int(id) + 3100]).IsUpdating</visible>
                 <visible>String.IsEqual(Container(301).ListItem.Property(id),$SKINSHORTCUTS[mainmenuid])</visible>
                 <!-- <movement>$SKINSHORTCUTS[widgetMovement]</movement> -->
-                <include content="Defs_AutoScroll">
-                    <param name="condition" value="!ControlGroup(3000).HasFocus() + System.IdleTime(1) + !Skin.HasSetting(DisableAutoScrollWidgets) + Integer.IsEqual(Container(3000).NumItems,1)" />
-                </include>
             </include>
         </controls>
     </submenuOther>
@@ -502,9 +492,6 @@
                 <onup>301</onup>
                 <ondown>301</ondown>
                 <onback>301</onback>
-                <include content="Defs_AutoScroll">
-                    <param name="condition" value="[Control.HasFocus(301) | Control.HasFocus(302)] + System.IdleTime(1) + !Skin.HasSetting(DisableAutoScrollWidgets)" />
-                </include>
                 <orientation>horizontal</orientation>
                 <itemlayout />
                 <focusedlayout />

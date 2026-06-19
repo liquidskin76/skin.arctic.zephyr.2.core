@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window id="146">
     <defaultcontrol always="true">300</defaultcontrol>
     <controls>
@@ -17,7 +20,7 @@
             <top>view_top</top>
             <left>view_pad</left>
             <right>view_pad</right>
-            <visible allowhiddenfocus="true">!$EXP[Exp_ShowPlotOverlay]</visible>
+            
             <include>Animation_FadeInOut</include>
             <control type="grouplist" id="9000">
                 <top>-15</top>
@@ -187,10 +190,9 @@
             </control>
         </control>
 
-       
-        <include>Object_PlotOverlay</include>
-        
-        
     </controls>
 
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

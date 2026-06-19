@@ -1,4 +1,8 @@
 <window type="dialog">
+
+<!-- Artic: Zephyr 2 Core -->
+
+
     <defaultcontrol always="true">120</defaultcontrol>
     <controls>
         <include>Global_Overlay</include>
@@ -242,3 +246,6 @@
         </control>
     </controls>
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

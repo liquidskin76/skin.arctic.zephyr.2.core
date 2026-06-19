@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+
+	<!-- Artic: Zephyr 2 Core -->
+	
+	
     <include name="View_53_Poster">
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
@@ -97,12 +101,11 @@
                 </focusedlayout>
             </control>
 
-            <!-- <control type="image">
-                <texture colordiffuse="bfffffff">common/white.png</texture>
-                <width>40</width>
-                <right>380</right>
-            </control> -->
         </control>
     </include>
+	
+
+	<!-- Artic: Zephyr 2 Core -->
+	
 </includes>
 

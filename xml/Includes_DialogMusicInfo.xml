@@ -5,7 +5,7 @@
             <top>view_top</top>
             <left>view_pad</left>
             <right>view_pad</right>
-            <visible allowhiddenfocus="true">!$EXP[Exp_ShowPlotOverlay]</visible>
+            
             <include>Animation_FadeInOut</include>
             <control type="grouplist" id="9000">
                 <top>-15</top>
@@ -49,7 +49,6 @@
                                 <include content="Object_Info_Title">
                                     <param name="label" value="$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]" />
                                 </include>
-                                <!-- <include>Object_Info_Line</include> -->
                                 <include content="Object_Info_Plot">
                                     <param name="maxheight" value="560" />
                                 </include>
@@ -70,12 +69,6 @@
                                 <onup>9601</onup>
                                 <ondown>5001</ondown>
                                 <include>Defs_ButtonList</include>
-                                <!-- <include content="Object_Info_Button">
-                                    <param name="id" value="7" />
-                                    <param name="groupid" value="8007" />
-                                    <param name="label" value="Rating" />
-                                    <param name="icon" value="special://skin/extras/icons/userrating.png" />
-                                </include> -->
                                 <include content="Object_Info_Button">
                                     <param name="id" value="8124" />
                                     <param name="groupid" value="8024" />
@@ -265,6 +258,6 @@
             <include>Object_Info_Arrows</include>
         </control>
 
-        <include>Object_PlotOverlay</include>
+        
     </include>
 </includes>

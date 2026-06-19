@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+
+	<!-- Artic: Zephyr 2 Core -->
+	
+	
     <include name="View_51_Wall_Label">
         <control type="label">
             <left>15</left>
@@ -166,7 +170,6 @@
         <param name="icononlyheight" default="100%" />
         <param name="labelinclude" default="View_51_Wall_Label" />
         <param name="aspectratio" default="stretch" />
-        <!-- <param name="clearlogo" default="false" /> -->
         <param name="circle" default="false" />
         <param name="diffuse" default="diffuse/poster-wall.png" />
         <definition>
@@ -237,18 +240,6 @@
                     <param name="id" value="$PARAM[id]" />
                     <param name="selectbox" value="$PARAM[selectbox]" />
                 </include>
-
-                <!-- <control type="group">
-                    <height>$PARAM[iconheight]</height>
-                    <control type="image">
-                        <right>30</right>
-                        <bottom>30</bottom>
-                        <width>33%</width>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture>$VAR[Image_ClearLogo]</texture>
-                        <visible>$PARAM[clearlogo]</visible>
-                    </control>
-                </control> -->
             </control>
         </definition>
     </include>
@@ -481,7 +472,6 @@
                 <param name="itemwidth" value="item_landscape_width" />
                 <param name="itemheight" value="item_row_height" />
                 <param name="icon" value="$VAR[Image_Landscape]" />
-                <!-- <param name="clearlogo" value="[!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo))] + [[String.IsEmpty(ListItem.Art(landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape))] | [[!String.IsEmpty(ListItem.Art(tvshow.landscape)) | !String.IsEmpty(ListItem.Art(landscape))] + !Skin.HasSetting(LandscapeArt)] | [!String.IsEmpty(ListItem.Art(thumb)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,video)] + String.IsEmpty(ListItem.Property(airday))]]" /> -->
                 <param name="iconheight" value="item_icon_height" />
                 <param name="diffuse" value="diffuse/landscape-wall.png" />
                 <param name="viewtype" value="$LOCALIZE[31359]" />
@@ -535,63 +525,6 @@
         </control>
     </include>
 
-    <!-- <include name="View_514_Wall_Info_Layout">
-        <top>-15</top>
-        <include>View_Wall_FlipSides</include>
-        <preloaditems>2</preloaditems>
-        <pagecontrol>60</pagecontrol>
-        <oninfo condition="ListItem.IsCollection">ActivateWindow(1140)</oninfo>
-    </include> -->
-
-    <!-- <include name="View_514_Wall_Info">
-        <control type="group">
-             <include>View_Group</include>
-            <visible>Control.IsVisible(514)</visible>
-            <include content="View_51_Wall_Container">
-                <param name="id" value="514" />
-                <param name="height" value="view_height" />
-                <param name="viewtype" value="$LOCALIZE[31426]" />
-                <param name="viewtypename" value="icon" />
-                <param name="controllayout" value="View_514_Wall_Info_Layout" />
-                <param name="forced" value="true" />
-                <param name="visible" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | $EXP[Exp_IsPluginAdvancedLauncher]" />
-                <width>1028.56</width>
-                <include>View_Vertical_Movement</include>
-            </include>
-            <include content="View_522_Showcase_Seasons_Info">
-                <param name="visible" value="true" />
-                <param name="icon" value="$VAR[Image_Landscape]" />
-                <param name="title" value="$VAR[Label_List_Title]" />
-                <param name="plot" value="$INFO[ListItem.Plot]" />
-            </include>
-        </control>
-    </include> -->
-
-    <!-- <include name="View_516_Wall_Info_2">
-        <control type="group">
-            <include>View_Group</include>
-            <visible>Control.IsVisible(516)</visible>
-            <include content="View_51_Wall_Container">
-                <param name="id" value="516" />
-                <param name="height" value="view_height" />
-                <param name="viewtype" value="$LOCALIZE[31436]" />
-                <param name="viewtypename" value="icon" />
-                <param name="controllayout" value="View_514_Wall_Info_Layout" />
-                <param name="forced" value="true" />
-                <param name="visible" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | !$EXP[Exp_IsPluginAdvancedLauncher]" />
-                <width>1028.56</width>
-                <include>View_Vertical_Movement</include>
-            </include>
-            <include content="View_522_Showcase_Seasons_Info">
-                <param name="visible" value="true" />
-                <param name="icon" value="$VAR[Image_Landscape]" />
-                <param name="title" value="$VAR[Label_List_Title]" />
-                <param name="plot" value="$INFO[ListItem.Plot]" />
-                <param name="isView2" value="true" />>
-            </include>
-        </control>
-    </include> -->
-
     <include name="View_515_Wall_Landscape_Small">
         <control type="group">
             <include>View_Group</include>
@@ -615,5 +548,9 @@
             </include>
         </control>
     </include>
+	
+
+	<!-- Artic: Zephyr 2 Core -->
+	
 </includes>
 

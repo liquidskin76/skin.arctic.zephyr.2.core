@@ -6,7 +6,7 @@
             <left>view_pad</left>
             <right>view_pad</right>
             <include>Object_Info_Arrows</include>
-            <visible allowhiddenfocus="true">!$EXP[Exp_ShowPlotOverlay]</visible>
+            
             <include>Animation_FadeInOut</include>
             <control type="grouplist" id="9000">
                 <top>-15</top>
@@ -367,7 +367,7 @@
             <param name="buttonid" value="9569" />
             <param name="art" value="Icon" />
         </include>
-        <include>Object_PlotOverlay</include>
+        
     </include>
 
     <include name="DialogPersonInfo">

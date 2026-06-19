@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
+
+	<!-- Artic: Zephyr 2 Core -->
+	
+	
     <!-- Main -->
     <color name="main_fg_100">ffdedede</color>
     <color name="main_fg_90">e7dedede</color>
@@ -29,5 +33,8 @@
     <color name="Background">ff181818</color>
     <color name="PosterBack">ff454545</color>
     <color name="AltPosterBack">1fdedede</color>
+	
+	
+	<!-- Artic: Zephyr 2 Core -->	
 
 </colors>

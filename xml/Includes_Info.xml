@@ -63,7 +63,6 @@
 
     <variable name="Info_FromYear">
         <value condition="String.IsEqual(ListItem.DBType,movie) + !Skin.HasSetting(DisableExtendedInfo) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=movie&amp;primary_release_year=$INFO[ListItem.Year]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]</value>
-        <!-- <value condition="String.IsEqual(ListItem.DBType,tvshow) + !Skin.HasSetting(DisableExtendedInfo) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper?info=discover&amp;type=tv&amp;first_air_date_year=$INFO[ListItem.Year]</value> -->
     </variable>
 
     <variable name="Info_FromGenre">
@@ -161,15 +160,6 @@
                 <label>$INFO[ListItem.Property(tagline)]</label>
                 <font>font_info_display</font>
             </control>
-            <!-- <control type="image">
-                <top>390</top>
-                <right>0</right>
-                <width>700</width>
-                <height>390</height>
-                <texture background="true">$INFO[ListItem.Property(clearlogo)]</texture>
-                <aspectratio align="right" aligny="center">keep</aspectratio>
-                <visible>!String.IsEmpty(ListItem.Property(clearlogo))</visible>
-            </control> -->
         </control>
     </include>
 

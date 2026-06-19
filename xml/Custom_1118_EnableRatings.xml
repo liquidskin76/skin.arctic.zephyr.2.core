@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window type="dialog" id="1118">
     <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
@@ -27,49 +30,49 @@
                 <orientation>vertical</orientation>
                 <usecontrolcoords>true</usecontrolcoords>
                 <control type="radiobutton" id="9001">
-                    <label>Oscars</label>
+                    <label>$LOCALIZE[31445]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Ratings.Oscars)</onclick>
                     <selected>!Skin.HasSetting(Ratings.Oscars)</selected>
                 </control>
                 <control type="radiobutton" id="9002">
-                    <label>Metacritic</label>
+                    <label>$LOCALIZE[31446]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Ratings.Metacritic)</onclick>
                     <selected>!Skin.HasSetting(Ratings.Metacritic)</selected>
                 </control>
                 <control type="radiobutton" id="9003">
-                    <label>RottenTomatoes</label>
+                    <label>$LOCALIZE[31447]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Ratings.RottenTomatoes)</onclick>
                     <selected>!Skin.HasSetting(Ratings.RottenTomatoes)</selected>
                 </control>
                 <control type="radiobutton" id="9004">
-                    <label>TheMovieDb</label>
+                    <label>$LOCALIZE[31448]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Ratings.TheMovieDB)</onclick>
                     <selected>Skin.HasSetting(Ratings.TheMovieDB)</selected>
                 </control>
                 <control type="radiobutton" id="9005">
-                    <label>TVDb</label>
+                    <label>$LOCALIZE[31449]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Ratings.TVDB)</onclick>
                     <selected>!Skin.HasSetting(Ratings.TVDB)</selected>
                 </control>
                 <control type="radiobutton" id="9006">
-                    <label>IMDb</label>
+                    <label>$LOCALIZE[31450]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Ratings.IMDB)</onclick>
                     <selected>!Skin.HasSetting(Ratings.IMDB)</selected>
                 </control>
                 <control type="radiobutton" id="9007">
-                    <label>IMDb $LOCALIZE[13409]</label>
+                    <label>$LOCALIZE[31450] $LOCALIZE[13409]</label>
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_Button</include>
                     <onclick>Skin.ToggleSetting(Ratings.Top250)</onclick>
@@ -94,8 +97,8 @@
             <include content="Dialog_Scrollbar">
                 <param name="onleft" value="9000" />
             </include>
-            
-           
+
+
             <control type="group">
                 <include>Dialog_Standard_Right_Group</include>
                 <control type="grouplist" id="8000">
@@ -112,3 +115,6 @@
         </control>
     </controls>
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

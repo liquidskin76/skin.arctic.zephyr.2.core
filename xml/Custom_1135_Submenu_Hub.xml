@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <window type="window" id="1135">
     <defaultcontrol always="true">302</defaultcontrol>
     <onload>SetProperty(Header_Center_Text,$LOCALIZE[1034])</onload>
@@ -24,7 +28,7 @@
         <include>Topbar</include>
 
         <control type="group">
-            <visible allowhiddenfocus="true">!$EXP[Exp_ShowPlotOverlay]</visible>
+            
             <include>Animation_FadeInOut</include>
             <include>View_Group</include>
             <include content="Home_Hub_Widget">
@@ -33,6 +37,9 @@
             </include>
         </control>
 
-        <include>Object_PlotOverlay</include>
+        
     </controls>
 </window>
+
+
+<!-- Artic: Zephyr 2 Core -->

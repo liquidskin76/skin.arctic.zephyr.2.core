@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
-    <include name="Defs_Global_Fade_Blur">
-        <fadetime>3000</fadetime>
-    </include>
-
     <variable name="Defs_SettingsPanel_NF">
         <!-- <value condition="Skin.HasSetting(DisableGeometric) + !String.IsEqual(Skin.CurrentColorTheme,SKINDEFAULT)">panel_fg_30</value> -->
         <value>panel_fg_70</value>
@@ -134,7 +130,6 @@
         <height>228</height>
         <width>1100</width>
         <include>Animation_FadeIn_Slide</include>
-        <!-- <visible>VideoPlayer.IsFullscreen | Window.IsVisible(MusicVisualisation.xml)</visible> -->
     </include>
 
     <variable name="Defs_VideoInfo_Extras">

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+
+<!-- Artic: Zephyr 2 Core -->
+
+
 <fonts>
-    <fontset id="Default" unicode="true">
+
+ <fontset id="Default" unicode="true">
 
         <include condition="Skin.HasSetting(FauneFonts)">Defaults_FauneFonts</include>
         <include condition="!Skin.HasSetting(FauneFonts)">Defaults_RobotoFonts</include>
@@ -233,3 +237,6 @@
     </fontset>
 
 </fonts>
+
+
+<!-- Artic: Zephyr 2 Core -->

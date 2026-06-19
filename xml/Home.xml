@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
-<window id="0">
-    <defaultcontrol always="false">301</defaultcontrol>
-    <onload condition="Skin.HasSetting(ThemeSwitcher) + System.Time(06:00,18:00) + !String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT)">XBMC.RunScript(script.skin.helper.service,action=setkodisetting,setting=lookandfeel.skincolors,value=SKINDEFAULT)</onload>
-    <onload condition="Skin.HasSetting(ThemeSwitcher) + !System.Time(06:00,18:00) + !String.IsEqual(Skin.CurrentColourTheme,Dark)">XBMC.RunScript(script.skin.helper.service,action=setkodisetting,setting=lookandfeel.skincolors,value=Dark)</onload>
 
+<window id="0">
+
+	<!-- Artic: Zephyr 2 Core -->
+	
+	
+    <defaultcontrol always="false">301</defaultcontrol>
+	
+    <include>Action_Blur_Onload</include>
+    <onload>SetProperty(TMDbHelper.WidgetContainer,993100,Home)</onload>	
+	
     <onload>SetProperty(ListItemHelper.WidgetContainerWindowName,home,home)</onload>
 
     <onunload condition="!Control.HasFocus(301) + [Window.Next(VideoFullScreen.xml) | Window.Next(MusicVisualisation.xml)]">SetFocus(301)</onunload>
@@ -14,10 +19,11 @@
     
     <onload condition="String.IsEmpty(Window(Home).Property(SkinSplashStarted))">AlarmClock(SkinSplashStarted,SetProperty(SkinSplashStarted,1,home),00:01,silent,false)</onload>
 
-    <onunload>ClearProperty(SkinHelper.WidgetContainer,Home)</onunload>
-    <onunload>ClearProperty(ListItemHelper.WidgetContainerId,Home)</onunload>
-
     <controls>
+	
+		<include>Home_Multi_Vertical</include>
+        <include>Defs_TMDbHelper_Loader</include>		
+	
         <control type="button" id="6000">
             <description>Weather Jump</description>
             <include>Defs_Hidden_Button</include>
@@ -43,7 +49,8 @@
             </itemlayout>
             <focusedlayout height="1" width="1">
             </focusedlayout>
-            <content><include>skinshortcuts-submenu-1</include></content>
+            <content>
+			</content>
         </control>
         <control type="list" id="9988">
             <description>hidden container for playlist background</description>
@@ -66,16 +73,7 @@
             <content>$INFO[Container(301).ListItem.Property(backgroundPlaylist)]</content>
         </control>
 
-        <control type="group">
-            <visible allowhiddenfocus="true">!$EXP[Exp_ShowPlotOverlay]</visible>
-            <include>Animation_FadeInOut</include>
-            <include condition="Skin.HasSetting(HomeMulti) + !Skin.HasSetting(HomeMultiHorizontal)">Home_Multi_Vertical</include>
-            <include condition="Skin.HasSetting(HomeMulti) + Skin.HasSetting(HomeMultiHorizontal)">Home_Multi_Horizontal</include>
-            <include condition="!Skin.HasSetting(HomeMulti)">Home_Simple</include>
-        </control>
-        <include>Object_PlotOverlay</include>
-
-        <!-- Splash -->
+        <!-- Splash Screen -->
         <control type="image" description="Background">
             <include>Dimensions_Fullscreen</include>
             <texture colordiffuse="Background">common/bg.jpg</texture>
@@ -83,7 +81,7 @@
             <visible>String.IsEmpty(Window(Home).Property(SkinSplashStarted)) | Integer.IsEqual(Container(301).NumItems,0) | Container(301).IsUpdating</visible>
             <animation effect="fade" start="100" end="0" delay="600" time="600" tween="quadratic">Hidden</animation>
         </control>
-        <control type="label">
+        <!-- <control type="label">
             <description>Loading</description>
             <include>Dimensions_Fullscreen</include>
             <align>center</align>
@@ -94,7 +92,7 @@
             <visible>String.IsEmpty(Window(Home).Property(SkinSplashStarted)) | Integer.IsEqual(Container(301).NumItems,0) | Container(301).IsUpdating</visible>
             <animation effect="fade" start="100" end="0" delay="0" time="600" tween="quadratic">Hidden</animation>
             <visible>String.IsEmpty(Skin.String(StartupPlaylist))</visible>
-        </control>
+        </control> -->
         <control type="group">
             <top>800</top>
             <visible>String.IsEmpty(Skin.String(StartupPlaylist))</visible>
@@ -104,6 +102,9 @@
                 <param name="label" value="$LOCALIZE[31349]..." />
             </include>
         </control>
-
     </controls>
+	
+	
+	<!-- Artic: Zephyr 2 Core -->
+	
 </window>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <includes>
+
+	<!-- Artic: Zephyr 2 Core -->
+	
+	
     <include name="View_540_Platform_Icon">
         <param name="top" default="0" />
         <param name="right" default="0" />
@@ -167,4 +171,8 @@
             <include>View_540_List_Info</include>
         </control>
     </include>
+
+
+	<!-- Artic: Zephyr 2 Core -->
+	
 </includes>
