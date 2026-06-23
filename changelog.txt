@@ -1,6 +1,10 @@
 liquidskin
 Artic: Zephyr 2 Core
 
+0.9.67 - Alpha 1
+- Update 'Play Disc' code in mainmenu.DATA.xml
+- Update skin resource artwork
+
 0.9.66
 - Rename skin to Artic: Zephyr 2 Core
 - Remove additional dark color options so only light and dark (previously 'with dark dialogs') are options
