@@ -1,7 +1,10 @@
 liquidskin
 Artic: Zephyr 2 Core
 
-0.9.67 - Alpha 1
+0.9.68
+- Delete redundant dark color xml
+
+0.9.67
 - Update 'Play Disc' code in mainmenu.DATA.xml
 - Update skin resource artwork
 
